@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone 16 - Acessórios Compatíveis</title>
+  <link rel="stylesheet" href="pratica.css">
+</head>
+<body>
+  <header>
+    <h1>Loja Oficial</h1>
+    <nav>
+      <a href="#" onclick="toggleCart()" style="color: #fff;text-decoration:none;">Carrinho (<span id="cartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="product-main">
+      <img src="iphone16.png" alt="iPhone 16">
+      <div class="product-info">
+        <h2>iPhone 16</h2>
+        <p>Experimente o futuro com o novo iPhone 16. Mais poderoso, mais inteligente, mais elegante.</p>
+        <button onclick="addToCart('iPhone 16')">Adicionar ao Carrinho</button>
+      </div>
+    </section>
+
+    <section class="accessories">
+      <h3>Acessórios Compatíveis</h3>
+      <div class="accessory-list" id="accessoryList"></div>
+    </section>
+  </div>
+
+  <div id="cartModal">
+    <h3>Carrinho</h3>
+    <div class="cart-items" id="cartItems"></div>
+    <p><strong>Total:</strong> R$ <span id="cartTotal">0,00</span></p>
+    <button onclick="checkout()">Finalizar Compra</button>
+  </div>
+
+  <script src="pratica.js"></script>
+</body>
+</html>
